@@ -36,6 +36,9 @@ using .Fractions: FractionVector
 #Gas constant, Boltzmann Constant
 include("base/constants.jl") 
 
+# @unitfulaware macro to allow compatibility with Unitful
+include("utils/unitfulaware.jl")
+
 #The Base of Clapeyron: EoSModel and eos(model,V,T,z)
 include("base/EoSModel.jl")
 
